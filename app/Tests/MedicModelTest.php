@@ -4,6 +4,9 @@ require_once(__DIR__ . '/../DB/db.php');
 
 use \PHPUnit\Framework\TestCase;
 
+/* MedicModel cubre la necesidad del requerimiento especial 
+ - Consultar pacientes por fecha.
+ */
 class MedicModelTest extends TestCase
 {
     public function dateProveedor(){
@@ -12,6 +15,8 @@ class MedicModelTest extends TestCase
             'Caso 2' => ['2020-10-11',  True]
         ];
     }
+
+    //Aqui se prueba el procedimiento de búsqueda por fecha
 
     /**
     * @dataProvider dateProveedor

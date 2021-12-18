@@ -4,9 +4,15 @@ require_once(__DIR__ . '/../DB/db.php');
 
 use \PHPUnit\Framework\TestCase;
 
+/*Aqui se cubren dos procedimientos  muy importantes que se 
+utilizan en la plataforma.*/
+
 class PacienteModelTests extends TestCase
 {
-
+    /*PacienteModel requiere de pacientes y los 
+    procedimientos relacionados a ellos, por ello
+    se decidio probar estos dos.*/
+    
     public function pacienteProveedor()
     {
         return [

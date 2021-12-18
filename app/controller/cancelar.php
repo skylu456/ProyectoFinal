@@ -27,7 +27,7 @@ require_once("../DB/db.php");
       <form action="ConfirmCancel.php" method="post">
         <div class="gender-details">
           <select name="citaSelect" id="servicio">
-            <option value="<?php echo $id ?>">ID DE CITA <?php echo $id ?> <?php echo $dato ?></option>
+            <option value="<?php $id ?>">No. de Cita <?php echo $id ?> <?php echo $dato ?></option>
             <?php }
                 ?>
           </select>

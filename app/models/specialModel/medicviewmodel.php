@@ -2,7 +2,7 @@
 class MedicModel{
     private $db;
     private $pacienteIng;
-
+    //Requerimiento especial que no se usa en la plataforma.
     public function __construct()
     {
         $this->db = Conexion::conectar();

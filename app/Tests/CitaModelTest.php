@@ -6,7 +6,9 @@ use \PHPUnit\Framework\TestCase;
 
 class CitaModelTest extends TestCase{
 
-
+    /* Utiliza el método getCitas() para obtener todas las citas de la base de datos.
+    Se espera que la lista de citas no sea nula, entonces, comprobamos que devuelva
+    algun dato*/
        public function citasProveedor()
     {
         return [
@@ -18,7 +20,9 @@ class CitaModelTest extends TestCase{
             $citasArr = $cita->getCitas();
             $this->assertEquals(2, count($citasArr));
         }
-    
+    //Aqui se prueba introducir una cita en la base de datos, 
+    //Utiliza el proveedor para los datos de prueba.
+
      /**
     * @dataProvider citasProveedor
     */
