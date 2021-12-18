@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="../css/agendarstyle.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="container">
+    <div class="title">Agendar Cita en Medicare</div>
+    <div class="content">
+    <h1>Agendar Cita</h1>
+      <form action="../controller/agendar.php" method="post">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Servicio Requerido *</span>
+            <select name="servReq" id="servicio">
+                <option value="Cardiologia">CARDIOLOGÍA</option>
+                <option value="Medcina General">MEDICINA GENERAL</option>
+                <option value="Ortopedicos">ORTOPEDICOS</option>
+                <option value="audi">OPTOMETRISTA</option>
+              </select>
+          </div>
+          <div class="input-box">
+            <span class="details">Día de la Cita *</span>
+            <input type="date"  name= "diaCita" >
+          </div>
+          <div class="input-box">
+            <span class="details">Motivo *</span>
+            <input type="textarea" placeholder="Escribe el motivo. mas de 10 caracteres" name="motivo" >
+          </div>
+          <div class="input-box">
+            <span class="details">Notas </span>
+            <input type="textarea" placeholder="Escribe alguna nota adicional que requieras." name = "notas">
+          </div>
+    
+        </div>
+	
+        <div class="gender-details">
+          <input type="radio" name="antecendentes" id="dot-1">
+          <input type="radio" name="antecedentes" id="dot-2">
+          <span class="gender-title">Antecendentes</span>
+          <div class="category">
+            <label for="dot-1">
+            <span class="dot one"></span>
+            <span class="gender">Sí</span>
+          </label>
+          <label for="dot-2">
+            <span class="dot two"></span>
+            <span class="gender">No</span>
+          </label>
+          </div>
+        </div>
+		<button class="button">
+			<span class="button__text">Agendar Cita</span>
+		</button>	
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>

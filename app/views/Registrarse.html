@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="../css/singupstyle.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="container">
+    <div class="title">Registro en MediCare</div>
+    <div class="content">
+      <form action="../controller/signup.php" method="post">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Nombre Completo *</span>
+            <input type="text" placeholder="Escribe tu nombre completo..." name="nombre" >
+          </div>
+          <div class="input-box">
+            <span class="details">Nombre de Usuario *</span>
+            <input type="text" placeholder="Escribe el nombre de Usuario" name= "usuario" >
+          </div>
+          <div class="input-box">
+            <span class="details">Correo *</span>
+            <input type="text" placeholder="Escribe tu correo" name="correo" >
+          </div>
+          <div class="input-box">
+            <span class="details">Numero de Celular </span>
+            <input type="text" placeholder="Escribe tu numero de celular" name = "numCelular">
+          </div>
+          <div class="input-box">
+            <span class="details">Contraseña *</span>
+            <input type="text" placeholder="Escribe tu contraseña"  name = "password">
+          </div>
+          <div class="input-box">
+            <span class="details">Dirección</span>
+            <input type="text" placeholder="Escribe tu dirección " >
+          </div>
+		  <div class="input-box">
+            <span class="details">Fecha de Nacimiento *</span>
+            <input type="date" name = "fechaNac">
+          </div>
+		  
+        </div>
+	
+        <div class="gender-details">
+          <input type="radio" name="gender" id="dot-1">
+          <input type="radio" name="gender" id="dot-2">
+          <span class="gender-title">Sexo</span>
+          <div class="category">
+            <label for="dot-1">
+            <span class="dot one"></span>
+            <span class="gender">Masculino</span>
+          </label>
+          <label for="dot-2">
+            <span class="dot two"></span>
+            <span class="gender">Femenino</span>
+          </label>
+          </div>
+        </div>
+		<button class="button">
+			<span class="button__text">Registrarse</span>
+		</button>	
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
